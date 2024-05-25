@@ -1,0 +1,17 @@
+<!-- Create new task form -->
+<h1 class="create-task-title">New Task Form</h1>
+<div id="form-container">
+    <form action="/tasks" method="post" id="create-task-form" class="task-form">
+        <!-- Title input field-->
+        <label for="title">Enter title for the task:</label>
+        <input type="text" placeholder="Enter the task" name="title" required>
+        <!-- Description Field -->
+        <label for="description">Enter description for the task:</label>
+        <input type="text" placeholder="Write a small description for the task" name="description">
+        <!-- Due date field -->
+        <label for="due-date">Select the due-date:</label>
+        <input type="date" name="dueDate" id="due-date" required>
+        <!-- Submit button -->
+        <button class="submit">Submit</button>
+    </form>
+</div>

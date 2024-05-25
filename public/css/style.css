@@ -1,0 +1,200 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    font-family: Okra, Helvetica, sans-serif;
+    background-color: rgb(202, 202, 222);
+}
+
+/* Navigation */
+#navbar{
+    padding: 0.3rem;
+    background-color:rgb(65,105,225);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#navbar a{
+    text-decoration: none;
+}
+
+.nav-title{
+    font-size: 1.4rem;
+    color: white;
+    cursor: pointer;
+}
+
+.create{
+    padding: 1%;
+    margin-right: 2%;
+    background-color: orange;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+    /* border: none; */
+}
+
+.create:hover{
+    box-shadow: 5px 5px 5px black;
+    background-color: rgb(255, 140, 0);
+    color: rgb(4, 4, 132);
+}
+
+/* Home Section */
+#home-title{
+    margin-top: 2%;
+    font-size: 3rem;
+    text-align: center;
+    color: purple;
+}
+
+#task-container{
+    width: 50%;
+    background-color: white;
+    margin: auto;
+    margin-top: 3%;
+    padding: 2%;
+    border-radius: 0.6rem;
+    box-shadow: 4px 4px 4px black;
+}
+
+.task-with-status{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.due-date-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    justify-content: space-between;
+}
+
+.task-title{
+    width: 60%;
+    text-align: right;
+    font-size: 2rem;
+    color: blue;
+}
+
+.task-subtitle{
+    color: rgb(255, 82, 3);
+}
+.align-left{
+    width: 60%;
+    overflow: ellipsis;
+}
+
+.wrong{
+    color: red;
+    font-size: 1.5rem;
+}
+
+.correct{
+    color: rgb(47, 255, 54);
+    font-size: 1.5rem;
+}
+
+.due-date{
+    font-size: 1.4rem;
+    margin-left: 5%;
+    color: rgb(116, 115, 115);
+}
+
+.button-design{
+    margin-top: 4%;
+    width: 100%;
+    font-size: 1.4rem;
+    border-radius: 0.4rem;
+    border: none;
+    color: red;
+    padding: 0.4rem;
+    cursor: pointer;
+    background-color: rgb(201, 197, 197);
+    box-shadow: 2px 2px 2px black;
+}
+
+.button-design:hover{
+    box-shadow: 3px 3px 3px black;
+    color: rgb(181, 4, 4);
+    background-color: gray;
+}
+
+/* Create task form */
+#form-container{
+    /* background-color: yellow; */
+    border: 1px solid black;
+    padding: 2rem;
+    border-radius: 0.6rem;
+    box-shadow: 5px 5px 5px black;
+    width: 70%;
+    margin: auto;
+    margin-top: 3%;
+    
+}
+
+.task-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.create-task-title{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 2.5rem;
+    color: purple;
+}
+
+.task-form label{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: rgb(71, 11, 71);
+    margin-bottom: 1%;
+}
+
+
+.task-form input{
+    font-size: 1rem;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    border: none;
+    box-shadow: 3px 3px 3px black;
+    margin-bottom: 3%;
+}
+
+.task-form input:focus{
+    outline: none;
+    border: none;
+}
+
+.submit{
+    border-radius: 0.6rem;
+    color: white;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    box-shadow: 3px 3px 3px black;
+    background-color: purple;
+    margin-bottom: 3%;
+}
+
+
+#submit:hover{
+    background-color: rgb(101, 8, 101);
+    box-shadow: 5px 5px 5px black;
+}
+

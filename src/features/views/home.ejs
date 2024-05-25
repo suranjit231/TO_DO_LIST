@@ -1,0 +1,34 @@
+<!-- Home Section -->
+<section>
+    <div id="home">
+        <h1 id="home-title">To-Do List</h1>
+        <% tasks.forEach((task)=>{ %>
+            <div id="task-container">
+                <div class="task-with-status">
+                    <h2 class="task-title"><%=task.title%></h2>
+                    <a href="taskStatus/<%= task._id %>"  style="text-decoration: none;">
+                    <% if(task.status=='pending'){%>
+                        <abbr title="Mark the task as done" class="wrong">Pending<i class="fa-solid fa-circle-xmark"></i></abbr>
+                    <%}else if(task.status=='done'){%>
+                        <abbr title="Mark the task as pending" class="correct">Completed<i class="fa-solid fa-circle-check"></i></abbr>
+                    <%}%>
+                </a>
+                </div>
+                <div class="due-date-container">
+                    <h2 class="task-subtitle">Due Date:</h2>
+                    <span class="due-date align-left"><%= task.dueDate%></span>
+                </div>
+                <div class="due-date-container">
+                    <h2 class="task-subtitle">Task Description:</h2>
+                    <span class="due-date align-left"><%= task.description%></span>
+                </div>
+                <abbr title="Remove task">
+                    <a href="/tasks/delete/<%= task._id %>"><button id="remove-task" class="button-design">Remove Task <i class="fa-solid fa-trash"></i></button></a>
+                </abbr>
+                <abbr title="Edit task">
+                    <a href="/tasks/edit/<%= task._id%>"><button class="button-design" style="color: blue;">Edit Task <i class="fa-solid fa-pen-to-square"></i></button></a>
+                </abbr>
+            </div>
+        <%})%>
+    </div>
+</section>

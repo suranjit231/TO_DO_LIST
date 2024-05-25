@@ -1,0 +1,22 @@
+<!-- Create new task form -->
+<h1 class="create-task-title">Edit Task Form</h1>
+
+
+<div id="form-container">
+    <form action="/tasks/edit/<%= task._id %>" method="post" id="edit-task-form" class="task-form">
+        <!-- Title input field-->
+        <label for="title">Enter new title for the task:</label>
+        <input type="text" name="title" id="title" value="<%= task.title %>" placeholder="Enter the task" required>
+        
+        <!-- Description Field -->
+        <label for="description">Enter description for the task:</label>
+        <input type="text" name="description" id="description" value="<%= task.description %>" placeholder="Write a small description for the task" required>
+        
+        <!-- Due date field -->
+        <label for="due-date">Select the due-date:</label>
+        <input type="date" name="dueDate" id="due-date" value="<%= task.dueDate %>" required>
+        
+        <!-- Submit button -->
+        <button type="submit" class="submit">Update</button>
+    </form>
+</div>
